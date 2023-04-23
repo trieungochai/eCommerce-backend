@@ -12,6 +12,6 @@ app.use(compression());
 // init DB
 require("./src/dbs/init.mongodb");
 const { isOverLoaded } = require("./src/helpers/checkConnections");
-isOverLoaded();
+// isOverLoaded();
 
 module.exports = app;
