@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const morgan = require("morgan");
 const helmet = require("helmet");
 const compression = require("compression");
@@ -10,8 +11,8 @@ app.use(helmet());
 app.use(compression());
 
 // init DB
-require("./src/dbs/init.mongodb");
-const { isOverLoaded } = require("./src/helpers/checkConnections");
+// require("./src/dbs/init.mongodb");
+// const { isOverLoaded } = require("./src/helpers/checkConnections");
 // isOverLoaded();
 
 module.exports = app;
