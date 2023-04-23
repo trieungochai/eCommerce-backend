@@ -1,7 +1,7 @@
 "use strict";
 
 const { mongoose } = require("mongoose");
-const { trackConnections } = require("../helpers/trackConnections");
+const { trackConnections } = require("../helpers/checkConnections");
 
 const connectionString = `mongodb://localhost:27017/shopDEV`;
 
