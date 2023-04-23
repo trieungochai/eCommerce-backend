@@ -10,6 +10,6 @@ app.use(helmet());
 app.use(compression());
 
 // init DB
-const mongodbInstance = require("./src/dbs/init.mongodb");
+require("./src/dbs/init.mongodb");
 
 module.exports = app;
