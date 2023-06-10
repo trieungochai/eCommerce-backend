@@ -6,6 +6,8 @@ const dev = {
     host: process.env.DEV_DB_HOST || "localhost",
     port: process.env.DEV_DB_PORT || 27017,
     name: process.env.DEV_DB_NAME || "shopDEV",
+    username: process.env.DEV_DB_USERNAME,
+    password: process.env.DEV_DB_PASSWORD,
   },
 };
 
@@ -17,6 +19,8 @@ const prod = {
     host: process.env.PROD_DB_HOST || "localhost",
     port: process.env.PROD_DB_PORT || 27017,
     name: process.env.PROD_DB_NAME || "shopPROD",
+    username: process.env.PROD_DB_USERNAME,
+    password: process.env.PROD_DB_PASSWORDs,
   },
 };
 
